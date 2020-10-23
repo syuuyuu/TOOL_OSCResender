@@ -60,5 +60,9 @@ namespace OSCResender {
         private void Window_Closed(object sender, EventArgs e) {
             UDPListener.ReleasePort();
         }
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e) {
+            UDPListener.RecievedList.Clear();
+        }
     }
 }

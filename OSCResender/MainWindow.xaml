@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OSCResender"
         mc:Ignorable="d"
-        Title="UDP Forwarder v1.11" Height="560" Width="371.156" Closed="Window_Closed" Icon="forwarder_3gG_icon.ico">
+        Title="UDP Forwarder v1.12" Height="560" Width="371.156" Closed="Window_Closed" Icon="forwarder_3gG_icon.ico">
     <StackPanel Orientation="Vertical" >
         <StackPanel Orientation="Horizontal" >
             <Label Content="RecvPORT:"></Label>
@@ -26,6 +26,7 @@
             <Label Content="IP:PORT:"></Label>
             <TextBox x:Name="i3"  Width="82"></TextBox>
             <TextBox x:Name="p3"  Width="48"></TextBox>
+            <Button Content="Clear" Margin="20,0,0,0" Click="ClearButton_Click"></Button>
         </StackPanel>
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="399" Margin="10,0,0,0" Width="346" ItemsSource="{Binding Source={x:Static local:UDPListener.RecievedList}}"  ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="10">
 
